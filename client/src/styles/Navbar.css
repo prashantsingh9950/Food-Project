@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ff4500;
+    color: white;
+  }
+  
+  /* Logo */
+  .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .search-bar input {
+    border: none;
+    padding: 6px;
+    outline: none;
+    width: 200px;
+  }
+  
+  .search-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Login & Signup Buttons */
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .auth-buttons button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-btn {
+    background: white;
+    color: #ff4500;
+  }
+  
+  .signup-btn {
+    background: #ffffff;
+    color: #ff4500;
+  }
+  
+  .auth-buttons button:hover {
+    background: #ffddb3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 700px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 6vw;
+    }
+    .search-bar input {
+      width: 120px;
+    }
+    .nav-links {
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 6px 2vw;
+    }
+    .logo a {
+      font-size: 1.1rem;
+    }
+    .search-bar input {
+      width: 80px;
+      font-size: 0.95rem;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      padding: 4px 6px;
+    }
+  }

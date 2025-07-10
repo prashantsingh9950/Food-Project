@@ -1,0 +1,58 @@
+/* src/styles/TopRestaurants.css */
+.top-restaurants-page {
+    padding: 20px;
+    background-color: #fefefe;
+  }
+  
+  .restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .restaurant-card {
+    background: #fff3e0;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: 0.3s;
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .top-restaurants-page, .restaurant-list, .restaurant-card {
+    box-sizing: border-box;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 700px) {
+    .restaurant-list {
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: auto;
+    }
+    .restaurant-card {
+      width: 98vw;
+      max-width: 340px;
+      padding: 10px 8px;
+      font-size: 0.95rem;
+      min-width: 0;
+    }
+    .top-restaurants-page {
+      padding: 10px 2vw;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .restaurant-card {
+      padding: 7px 4px;
+      font-size: 0.9rem;
+      min-width: 0;
+      max-width: 100%;
+    }
+  }
